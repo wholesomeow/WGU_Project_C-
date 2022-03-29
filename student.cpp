@@ -1,6 +1,7 @@
 #include "degree.h"
 #include "student.h"
 #include <iostream>
+#include <iomanip>
 #include <sstream>
 
 using namespace std;
@@ -64,13 +65,13 @@ string Student::getDegreeProgramString() const
 }
 
 void Student::Print() {
-	cout << "Student ID: " << getStudentID() << "\t";
-	cout << "First Name: " << getFirstName() << "\t";
-	cout << "Last Name: " << getLastName() << "\t";
-	cout << "Email Address: " << getEmailAddr() << "\t";
-	cout << "Age: " << getStudentAge() << "\t" << "\t";
-	cout << "Days In Course: " << getDaysInCourseString() << "\t";
-	cout << "Degree Program: " << getDegreeProgramString() << endl;
+	cout << "Student ID: " << setw(5) << left << getStudentID() << "\t";
+	cout << "First Name: " << setw(10) << getFirstName() << "\t";
+	cout << "Last Name: " << setw(15) << getLastName() << "\t";
+	cout << "Email Address: " << setw(30) << left << getEmailAddr() << "\t";
+	cout << "Age: " << setw(5) << left << getStudentAge() << "\t";
+	cout << "Days In Course: " << setw(15) << getDaysInCourseString() << "\t";
+	cout << "Degree Program: " << setw(10) << getDegreeProgramString() << endl;
 }
 
 Student::~Student() {} 
