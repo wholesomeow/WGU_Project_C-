@@ -9,24 +9,13 @@ string stringDegreeProgram[] = { "SECURITY", "NETWORK", "SOFTWARE", "BLANK" };
 
 Student::Student(string studentID, string firstName, string lastName, string emailAddr, int studentAge, vector<int> daysInCourse, DegreeProgram degreeProgram)
 {
-					this->studentID = studentID;
-					this->firstName = firstName;
-					this->lastName = lastName;
-					this->emailAddr = emailAddr;
-					this->studentID = studentAge;
-					this->daysInCourse = daysInCourse;
-					this->degreeProgram = degreeProgram;
-}
-
-Student::Student()
-{
-	this->studentID = "";
-	this->firstName = "";
-	this->lastName = "";
-	this->emailAddr = "";
-	this->studentAge = 99;
-	this->daysInCourse = { 0,0,0 };
-	this->degreeProgram = DegreeProgram::BLANK;
+	setStudentID(studentID);
+	setFirstName(firstName);
+	setLastName(lastName);
+	setEmailAddr(emailAddr);
+	setStudentAge(studentAge);
+	setDaysInCourse(daysInCourse);
+	setDegreeProgram(degreeProgram);
 }
 
 //Setter Fucntions
@@ -79,7 +68,7 @@ void Student::Print() {
 	cout << "First Name: " << getFirstName() << "\t";
 	cout << "Last Name: " << getLastName() << "\t";
 	cout << "Email Address: " << getEmailAddr() << "\t";
-	cout << "Age: " << getStudentAge() << "\t";
+	cout << "Age: " << getStudentAge() << "\t" << "\t";
 	cout << "Days In Course: " << getDaysInCourseString() << "\t";
 	cout << "Degree Program: " << getDegreeProgramString() << endl;
 }

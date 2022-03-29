@@ -19,7 +19,7 @@ int main()
         "A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK",
         "A3,Jack,Napoli,The_lawyer99yahoo.com,19,20,40,33,SOFTWARE",
         "A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY",
-        "A5,Dan,Adams,DanAdamsHarder@Outlook.com,34,21,32,44,SOFTWARE",
+        "A5,Dan ,Adams,DanAdamsHarder@Outlook.com,34,21,32,44,SOFTWARE",
         "A6,Javier,Nieves,drcappuchino2@gmail.com,27,20,31,43,SOFTWARE"
     };
 
